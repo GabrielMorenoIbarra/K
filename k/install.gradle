@@ -1,0 +1,38 @@
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.gabrielmorenoibarra.k'
+
+install {
+    repositories.mavenInstaller {
+        pom {
+            project {
+                packaging 'aar'
+                groupId 'com.gabrielmorenoibarra.k'
+                artifactId 'k'
+
+                name 'K'
+                description 'Android Utilities'
+                url 'https://github.com/GabrielMorenoIbarra/K'
+
+                licenses {
+                    license {
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        id 'gabrielmorenoibarra'
+                        name 'Gabriel Moreno'
+                        email 'gabrielmorenoibarra@gmail.com'
+                    }
+                }
+                scm {
+                    connection 'https://github.com/GabrielMorenoIbarra/K.git'
+                    developerConnection 'https://github.com/GabrielMorenoIbarra/K.git'
+                    url 'https://github.com/GabrielMorenoIbarra/K'
+                }
+            }
+        }
+    }
+}
