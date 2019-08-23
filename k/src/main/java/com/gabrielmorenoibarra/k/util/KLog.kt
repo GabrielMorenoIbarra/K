@@ -12,8 +12,9 @@ class KLog {
             private set
 
         /**
-         * This method must be called within the onCreate of the Application class (or first activity to lunch)
-         * for ensuring logs are not shown on release version. (See sample module)
+         * This method must be called at the very beginning within the onCreate() of the Application class
+         * (or first activity to lunch) for ensuring logs are not shown on release version.
+         * (See sample module)
          */
         fun launch(debug: Boolean) {
             Companion.debug = debug
