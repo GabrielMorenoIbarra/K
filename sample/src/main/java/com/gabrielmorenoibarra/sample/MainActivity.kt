@@ -1,4 +1,4 @@
-package com.gabrielmorenoibarra.k
+package com.gabrielmorenoibarra.sample
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
