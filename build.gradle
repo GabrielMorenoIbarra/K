@@ -17,7 +17,9 @@ allprojects {
     repositories {
         google()
         jcenter()
-
+    }
+    tasks.withType(Javadoc).all {
+        enabled = false
     }
 }
 
@@ -26,5 +28,5 @@ task clean(type: Delete) {
 }
 
 ext {
-    libVersion = "0.0.2"
+    libVersion = "0.1.0"
 }
