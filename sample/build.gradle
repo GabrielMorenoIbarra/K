@@ -1,9 +1,9 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+
 android {
     compileSdkVersion 28
-
 
     defaultConfig {
         applicationId "com.gabrielmorenoibarra.sample"
@@ -21,7 +21,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
 }
 
 dependencies {
@@ -34,7 +33,6 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
-
-//    implementation 'com.gabrielmorenoibarra.k:k:0.0.1'
+//    implementation "com.gabrielmorenoibarra.k:k:$rootProject.libVersion"
     implementation project(':k')
 }
